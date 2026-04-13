@@ -1,0 +1,10 @@
+name: file-organizer-ai-mcp
+description: "MEOK AI Labs — File Organizer tools for AI agents and LLMs"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/file-organizer-ai-mcp
+license: MIT
+categories: [Productivity, File Management]
+tags: [file-organization, file-management, directory-structure, file-sorting]
+runtime: python
+entrypoint: server.py
