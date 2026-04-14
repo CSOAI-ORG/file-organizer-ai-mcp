@@ -1,23 +1,79 @@
 {
   "name": "file-organizer-ai-mcp",
-  "description": "MEOK AI Labs \u2014 File Organizer tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "MCP server for file organization tools.",
+  "version": "1.0.0",
   "tools": [
-    "categorize_by_extension",
-    "find_duplicates_by_hash",
-    "calculate_directory_size",
-    "generate_tree"
-  ],
-  "categories": [
-    "Productivity",
-    "File Management"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "categorize_by_extension",
+      "description": "Categorize files in a directory by their extensions.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "directory"
+        ]
+      }
+    },
+    {
+      "name": "find_duplicates_by_hash",
+      "description": "Find duplicate files by comparing MD5 hashes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string"
+          },
+          "recursive": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "directory"
+        ]
+      }
+    },
+    {
+      "name": "calculate_directory_size",
+      "description": "Calculate directory size with breakdown by subdirectory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string"
+          },
+          "top_n": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "directory"
+        ]
+      }
+    },
+    {
+      "name": "generate_tree",
+      "description": "Generate a tree view of a directory structure.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string"
+          },
+          "max_depth": {
+            "type": "integer"
+          },
+          "show_size": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "directory"
+        ]
+      }
+    }
+  ]
 }

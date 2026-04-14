@@ -1,4 +1,9 @@
 """File Organizer AI MCP Server — File organization tools."""
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import hashlib
 import os
 import time
@@ -39,8 +44,12 @@ def _categorize(ext: str) -> str:
     return "other"
 
 @mcp.tool()
-def categorize_by_extension(directory: str) -> dict[str, Any]:
+def categorize_by_extension(directory: str, api_key: str = "") -> dict[str, Any]:
     """Categorize files in a directory by their extensions."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _rate_check("categorize_by_extension"):
         return {"error": "Rate limit exceeded (50/day)"}
     if not os.path.isdir(directory):
@@ -78,8 +87,12 @@ def _human_size(size: int) -> str:
     return f"{size:.1f} PB"
 
 @mcp.tool()
-def find_duplicates_by_hash(directory: str, recursive: bool = False) -> dict[str, Any]:
+def find_duplicates_by_hash(directory: str, recursive: bool = False, api_key: str = "") -> dict[str, Any]:
     """Find duplicate files by comparing MD5 hashes."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _rate_check("find_duplicates_by_hash"):
         return {"error": "Rate limit exceeded (50/day)"}
     if not os.path.isdir(directory):
@@ -125,8 +138,12 @@ def find_duplicates_by_hash(directory: str, recursive: bool = False) -> dict[str
     }
 
 @mcp.tool()
-def calculate_directory_size(directory: str, top_n: int = 10) -> dict[str, Any]:
+def calculate_directory_size(directory: str, top_n: int = 10, api_key: str = "") -> dict[str, Any]:
     """Calculate directory size with breakdown by subdirectory."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _rate_check("calculate_directory_size"):
         return {"error": "Rate limit exceeded (50/day)"}
     if not os.path.isdir(directory):
@@ -161,8 +178,12 @@ def calculate_directory_size(directory: str, top_n: int = 10) -> dict[str, Any]:
     }
 
 @mcp.tool()
-def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False) -> dict[str, Any]:
+def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False, api_key: str = "") -> dict[str, Any]:
     """Generate a tree view of a directory structure."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     if not _rate_check("generate_tree"):
         return {"error": "Rate limit exceeded (50/day)"}
     if not os.path.isdir(directory):

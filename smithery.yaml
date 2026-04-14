@@ -1,10 +1,40 @@
 name: file-organizer-ai-mcp
-description: "MEOK AI Labs — File Organizer tools for AI agents and LLMs"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/file-organizer-ai-mcp
-license: MIT
-categories: [Productivity, File Management]
-tags: [file-organization, file-management, directory-structure, file-sorting]
-runtime: python
-entrypoint: server.py
+description: MCP server for file organization tools.
+version: 1.0.0
+tools:
+- name: categorize_by_extension
+  description: Categorize files in a directory by their extensions.
+  parameters:
+  - name: directory
+    type: string
+    required: true
+- name: find_duplicates_by_hash
+  description: Find duplicate files by comparing MD5 hashes.
+  parameters:
+  - name: directory
+    type: string
+    required: true
+  - name: recursive
+    type: boolean
+    required: false
+- name: calculate_directory_size
+  description: Calculate directory size with breakdown by subdirectory.
+  parameters:
+  - name: directory
+    type: string
+    required: true
+  - name: top_n
+    type: integer
+    required: false
+- name: generate_tree
+  description: Generate a tree view of a directory structure.
+  parameters:
+  - name: directory
+    type: string
+    required: true
+  - name: max_depth
+    type: integer
+    required: false
+  - name: show_size
+    type: boolean
+    required: false
