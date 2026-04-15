@@ -1,0 +1,52 @@
+{
+  "name": "file-organizer-ai",
+  "description": "File Organizer Ai tools powered by MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "categorize_by_extension",
+      "description": "Categorize files in a directory by their extensions."
+    },
+    {
+      "name": "find_duplicates_by_hash",
+      "description": "Find duplicate files by comparing MD5 hashes."
+    },
+    {
+      "name": "calculate_directory_size",
+      "description": "Calculate directory size with breakdown by subdirectory."
+    },
+    {
+      "name": "generate_tree",
+      "description": "Generate a tree view of a directory structure."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
