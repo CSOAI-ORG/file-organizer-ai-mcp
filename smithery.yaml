@@ -1,5 +1,5 @@
 name: file-organizer-ai-mcp
-description: MCP server for file organization tools.
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: categorize_by_extension
