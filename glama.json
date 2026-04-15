@@ -1,0 +1,10 @@
+{
+  "name": "file-organizer-ai-mcp",
+  "description": "MEOK AI Labs \u2014 file-organizer-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
