@@ -1,21 +1,33 @@
-# file-organizer-ai-mcp
+# File Organizer AI MCP Server
 
-MCP server for file organization tools.
+> By [MEOK AI Labs](https://meok.ai) — File organization, categorization, duplicate detection, and directory analysis
 
-## Tools
+## Installation
 
-- **categorize_by_extension** — Categorize files by type (images, code, docs, etc.)
-- **find_duplicates_by_hash** — Find duplicate files via MD5 hash
-- **calculate_directory_size** — Directory size breakdown by subdirectory
-- **generate_tree** — Generate directory tree view
+```bash
+pip install file-organizer-ai-mcp
+```
 
 ## Usage
 
 ```bash
-pip install mcp
 python server.py
 ```
 
-## Rate Limits
+## Tools
 
-50 calls/day per tool (free tier).
+This server provides file organization tools including:
+
+- File categorization by type (images, documents, audio, video, code, archives, etc.)
+- Directory scanning and analysis
+- Duplicate file detection via hash comparison
+- Organization plan generation
+- File renaming suggestions
+
+## Authentication
+
+Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+
+## License
+
+MIT — MEOK AI Labs
