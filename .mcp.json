@@ -1,6 +1,6 @@
 {
   "name": "file-organizer-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "AI-powered file organizer ai MCP server for agents. Supports categorize by extension, find duplicates by hash, calculate directory size. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

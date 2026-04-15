@@ -1,7 +1,7 @@
 {
   "name": "file-organizer-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — file organizer MCP Server",
+  "description": "AI-powered file organizer ai MCP server for agents. Supports categorize by extension, find duplicates by hash, calculate directory size. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "file organizer",
@@ -9,10 +9,22 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp"
+  }
 }
