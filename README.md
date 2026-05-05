@@ -1,33 +1,38 @@
-# File Organizer AI MCP Server
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — File organization, categorization, duplicate detection, and directory analysis
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/file-organizer-ai-mcp)](https://github.com/CSOAI-ORG/file-organizer-ai-mcp/stargazers)
+
+# ufileU organizerU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/file-organizer-ai-mcp)](https://www.npmjs.com/package/@meok-ai/file-organizer-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/file-organizer-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install file-organizer-ai-mcp
+# or
+npm install -g @meok-ai/file-organizer-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-This server provides file organization tools including:
-
-- File categorization by type (images, documents, audio, video, code, archives, etc.)
-- Directory scanning and analysis
-- Duplicate file detection via hash comparison
-- Organization plan generation
-- File renaming suggestions
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
