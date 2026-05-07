@@ -1,3 +1,5 @@
+[![file-organizer-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/file-organizer-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/file-organizer-ai-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/file-organizer-ai-mcp)](https://github.com/CSOAI-ORG/file-organizer-ai-mcp/stargazers)
