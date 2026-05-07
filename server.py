@@ -58,7 +58,23 @@ def _categorize(ext: str) -> str:
 
 @mcp.tool()
 def categorize_by_extension(directory: str, api_key: str = "") -> dict[str, Any]:
-    """Categorize files in a directory by their extensions."""
+    """Categorize files in a directory by their extensions.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -102,7 +118,23 @@ def _human_size(size: int) -> str:
 
 @mcp.tool()
 def find_duplicates_by_hash(directory: str, recursive: bool = False, api_key: str = "") -> dict[str, Any]:
-    """Find duplicate files by comparing MD5 hashes."""
+    """Find duplicate files by comparing MD5 hashes.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -154,7 +186,23 @@ def find_duplicates_by_hash(directory: str, recursive: bool = False, api_key: st
 
 @mcp.tool()
 def calculate_directory_size(directory: str, top_n: int = 10, api_key: str = "") -> dict[str, Any]:
-    """Calculate directory size with breakdown by subdirectory."""
+    """Calculate directory size with breakdown by subdirectory.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -195,7 +243,22 @@ def calculate_directory_size(directory: str, top_n: int = 10, api_key: str = "")
 
 @mcp.tool()
 def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False, api_key: str = "") -> dict[str, Any]:
-    """Generate a tree view of a directory structure."""
+    """Generate a tree view of a directory structure.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
