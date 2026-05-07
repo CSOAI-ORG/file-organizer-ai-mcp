@@ -74,6 +74,11 @@ def categorize_by_extension(directory: str, api_key: str = "") -> dict[str, Any]
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        directory (str): The directory to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -148,6 +153,12 @@ def find_duplicates_by_hash(directory: str, recursive: bool = False, api_key: st
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        directory (str): The directory to analyze or process.
+        recursive (bool): The recursive to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -230,6 +241,12 @@ def calculate_directory_size(directory: str, top_n: int = 10, api_key: str = "")
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        directory (str): The directory to analyze or process.
+        top_n (int): The top n to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -300,6 +317,13 @@ def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False, a
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        directory (str): The directory to analyze or process.
+        max_depth (int): The max depth to analyze or process.
+        show_size (bool): The show size to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
