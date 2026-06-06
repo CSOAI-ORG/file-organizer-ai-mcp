@@ -1,0 +1,9 @@
+# file-organizer-ai-mcp - Auto-trigger Rules
+
+When the user asks about file organizer, use file-organizer-ai-mcp tools: categorize_by_extension, find_duplicates_by_hash, calculate_directory_size, generate_tree
+
+**File Organizer AI MCP Server — File organization tools.**
+
+Install: `pip install file-organizer-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

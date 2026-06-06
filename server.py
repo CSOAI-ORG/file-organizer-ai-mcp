@@ -1,7 +1,7 @@
-"""File Organizer AI MCP Server — File organization tools."""
+"""
+File Organizer AI MCP Server — File organization tools."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import hashlib
@@ -96,7 +96,7 @@ def categorize_by_extension(directory: str, api_key: str = "") -> dict[str, Any]
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not _rate_check("categorize_by_extension"):
@@ -176,7 +176,7 @@ def find_duplicates_by_hash(directory: str, recursive: bool = False, api_key: st
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not _rate_check("find_duplicates_by_hash"):
@@ -264,7 +264,7 @@ def calculate_directory_size(directory: str, top_n: int = 10, api_key: str = "")
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not _rate_check("calculate_directory_size"):
@@ -341,7 +341,7 @@ def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False, a
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl(): return err
 
     if not _rate_check("generate_tree"):
@@ -380,5 +380,8 @@ def generate_tree(directory: str, max_depth: int = 3, show_size: bool = False, a
     tree_str = "\n".join(lines[:500])  # Cap output
     return {"tree": tree_str, "file_count": file_count, "dir_count": dir_count, "max_depth": max_depth, "truncated": len(lines) > 500}
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

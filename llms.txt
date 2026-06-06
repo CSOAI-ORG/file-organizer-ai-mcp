@@ -1,0 +1,33 @@
+# file-organizer-ai-mcp
+# **File Organizer AI MCP Server — File organization tools.**
+
+## Install
+```bash
+pip install file-organizer-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `categorize_by_extension`
+Categorize files in a directory by their extensions.
+
+### `find_duplicates_by_hash`
+Find duplicate files by comparing MD5 hashes.
+
+### `calculate_directory_size`
+Calculate directory size with breakdown by subdirectory.
+
+### `generate_tree`
+Generate a tree view of a directory structure.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

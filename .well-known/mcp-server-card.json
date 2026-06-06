@@ -1,0 +1,25 @@
+{
+  "name": "file-organizer-ai-mcp",
+  "title": "File Organizer Ai Mcp",
+  "description": "AI-powered file organizer ai MCP server for agents. Supports categorize by extension, find duplicates by hash, calculate directory size. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "categorize_by_extension"
+    },
+    {
+      "name": "find_duplicates_by_hash"
+    },
+    {
+      "name": "calculate_directory_size"
+    },
+    {
+      "name": "generate_tree"
+    }
+  ]
+}
