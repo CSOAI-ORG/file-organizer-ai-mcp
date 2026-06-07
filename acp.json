@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "file-organizer-ai-mcp",
+    "description": "File Organizer Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "file-organizer-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "categorize_by_extension",
+      "find_duplicates_by_hash",
+      "calculate_directory_size",
+      "generate_tree"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "file-organizer-ai-mcp",
+  "description": "File Organizer Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/file-organizer-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "categorize_by_extension",
+      "name": "Categorize By Extension",
+      "description": "categorize_by_extension via file-organizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "find_duplicates_by_hash",
+      "name": "Find Duplicates By Hash",
+      "description": "find_duplicates_by_hash via file-organizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "calculate_directory_size",
+      "name": "Calculate Directory Size",
+      "description": "calculate_directory_size via file-organizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "generate_tree",
+      "name": "Generate Tree",
+      "description": "generate_tree via file-organizer-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
