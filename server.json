@@ -4,9 +4,8 @@
   "version": "1.0.10",
   "description": "File Organizer Ai MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp",
-    "source": "https://github.com/CSOAI-ORG/file-organizer-ai-mcp"
+    "source": "github"
   },
   "packages": [
     {
